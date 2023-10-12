@@ -16,6 +16,7 @@ class Usuario{
 
     public:
 
+
     Usuario();
     Usuario(const string &nome, const string &cpf, const string &endereco, const string &telefone);
     string getNome();
@@ -23,6 +24,10 @@ class Usuario{
     string getEndereco();
     string getTelefone();
     int getId();
+
+    static int getquantidadeDeIdentificadores();
+    static void setQuantidadeDeIdentificadores(int qtd);
+
 
     void setNome(string nome);
     void setCpf(string cpf);

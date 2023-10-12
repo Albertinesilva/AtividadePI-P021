@@ -11,6 +11,14 @@ Usuario::Usuario(){
 
 }
 
+int Usuario::getquantidadeDeIdentificadores(){
+    return Usuario::quantidadeDeIdentificadores;
+}
+
+void Usuario::setQuantidadeDeIdentificadores(int qtd){
+    Usuario::quantidadeDeIdentificadores = qtd;
+}
+
 string Usuario::getNome(){
     return this->nome;
 }
